@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSSM</title>
+  <link rel="icon" type="image/png" href="png.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    .topnav {
+      overflow: hidden;
+      background-color: #6d6c6c;
+    }
+    
+    .topnav a {
+      float: right;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 8px 8px;
+      text-decoration: none;
+      font-size: 12px;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    /* Create a right-aligned (split) link inside the navigation bar */
+    .topnav a.split {
+      float: right;
+      background-color: #04AA6D;
+      color: white;
+    }
+
+    /* Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  background: #fcfcfc;
+  color: rgb(241, 21, 21);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+header .logo img{
+  height: 80px;
+  margin-right: 20px;
+}
+.est{
+  margin-left: 6px;
+}
+
+header .school-info h1 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-style: inherit;
+}
+
+header .school-info p {
+  font-size: 1rem;
+}
+
+ 
+    .sidepanel  {
+      width: 0;
+      position: absolute;
+      z-index: 1;
+      height: 300px;
+      top: 200px;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 30px;
+    }
+    
+    .sidepanel a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidepanel a:hover {
+      color: #f1f1f1;
+    }
+    
+    .sidepanel .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+    }
+    
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+    }
+    
+    .openbtn:hover {
+      background-color:#444;
+    }
+
+      .hero-section {
+          /*background: url("photo-collage.png.png") no-repeat center center/cover;*/
+          color: rgb(85, 84, 84);
+          height: 100%;
+          padding: 20px 20px;
+          text-align: center;
+      }
+      
+
+      .feature-box {
+          padding: 20px;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          transition: transform 0.3s;
+      }
+
+      .feature-box:hover {
+          transform: scale(1.05);
+          box-shadow: 0 4px 8px rgba(9, 236, 47, 0.2);
+      }
+
+      .slider {
+          position: relative;
+          width: 100%;
+          height: 200px; /* Adjust the height based on your needs */
+          overflow: hidden;
+          
+        }
+        
+        .slides {
+          display: flex;
+          width: 100%; /* Total width: 100% for each image */
+          height: 100%;
+          animation: slide 20s infinite;
+          
+        }
+        
+        .slides img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        
+        @keyframes slide {
+          0% {
+            transform: translateX(0%);
+          }
+          10% {
+            transform: translateX(-50%);
+          }
+          20% {
+            transform: translateX(-100%);
+          }
+          30% {
+            transform: translateX(-150%);
+          }
+          40% {
+            transform: translateX(-200%);
+          }
+          30% {
+            transform: translateX(-150%);
+          }
+          20% {
+            transform: translateX(-100%);
+          }
+          10% {
+            transform: translateX(-50%);
+          }
+          0% {
+            transform: translateX(0%);
+          }
+        }
+
+
+      footer {
+          background-color: #f8f9fa;
+          padding: 20px 0;
+          text-align: center;
+      }
+
+    
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <a href="message.html">Message</a>
+    <a class="active" href="contact.html">Contact Us</a>
+    <a href="#news">Charitable Trust</a>
+    <a href="team.html">Our Team</a>
+    <a href="learnmore.html"></i>About Us</a>
+    <!-- <a href="#about" class="split">Help</a> -->
+  </div>
+  <header>
+        <div class="logo">
+          <img src="png.png" alt="School Logo">
+          <div class="est"> EST: 2007</div>
+        </div>
+        <div class="school-info">
+          <h1>MAA SARASWATI SHISHU MANDIR</h1>
+          <p>Dharampur bande hat, Samastipur, Bihar 848504</p>
+        </div>
+      </header>
+      <button class="openbtn" onclick="openNav()">☰</button> 
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  
+  <div class="collage-photo">
+    <img src="photo-collage.png.png" style="width: 100%; height: 350px;">
+  </div>
+  
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+        <h1>Welcome to MSSM</h1>
+        <p>Empowering young minds for a brighter future.</p>
+        <a href="learnmore.html" class="btn btn-primary">Learn More</a>
+    </div>
+    
+</section>
+
+<!-- About Section -->
+
+<section id="about" class="py-5">
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <p>MySchool is dedicated to providing top-quality education and fostering an environment where 
+                  students thrive. Our mission is to nurture creativity, critical thinking, and leadership in every student.</p>
+                  <a href="learnmore.html" class="btn btn-primary" >About More</a>
+            </div>
+            <div class="col-md-6">
+                <img src="guest1 (1).jpg" class="img-fluid rounded" alt="About us">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Features</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="feature-box text-center">
+                    <h4>Experienced Faculty</h4>
+                    <p>Our teachers are highly qualified and dedicated to student success.</p>
+                    <a href="team.html" class="btn btn-primary" >Know More</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box text-center">
+                    <h4>State-of-the-Art Facilities</h4>
+                    <p>Modern classrooms, laboratories, and sports facilities for holistic development.</p>
+                    <a href="facility.html" class="btn btn-primary" >About More</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box text-center">
+                    <h4>Comprehensive Curriculum</h4>
+                    <p>Our curriculum integrates academics, arts, and extracurricular activities.</p>
+                    <a href="activity.html" class="btn btn-primary" >About More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<div class="slider">
+    <div class="slides">
+      <img src="childs.jpg" alt="Image 1">
+      <img src="computer lab.jpg" alt="Image 2">
+      <img src="fastivel.jpg" alt="Image 3">
+      <img src="guest1 (1).jpg" alt="Image 4">
+      <img src="independance.jpg" alt="Image 1">
+      <img src="lunch.jpg" alt="Image 2">
+      <img src="photo-collage.png.png" alt="Image 3">
+      <img src="play class.jpg" alt="Image 4">
+      <img src="playground.jpg" alt="Image 1">
+      <img src="pray2.jpg" alt="Image 2">
+      <img src="pray3.jpg alt="Image 3">
+      <img src="sainik.jpg" alt="Image 4">
+      <img src="childs.jpg" alt="Image 1">
+      <img src="computer lab.jpg" alt="Image 2">
+      <img src="fastivel.jpg" alt="Image 3">
+      <img src="guest1 (1).jpg" alt="Image 4">
+      <img src="independance.jpg" alt="Image 1">
+      <img src="lunch.jpg" alt="Image 2">
+      <img src="photo-collage.png.png" alt="Image 3">
+      <img src="play class.jpg" alt="Image 4">
+      <img src="playground.jpg" alt="Image 1">
+      <img src="pray2.jpg" alt="Image 2">
+      <img src="pray3.jpg alt="Image 3">
+      <img src="sainik.jpg" alt="Image 4">
+      <img src="photo-collage.png.png" alt="Image 3">
+      <img src="play class.jpg" alt="Image 4">
+      <img src="playground.jpg" alt="Image 1">
+      <img src="pray2.jpg" alt="Image 2">
+      <img src="pray3.jpg alt="Image 3">
+      <img src="sainik.jpg" alt="Image 4">
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2025 MSSM School. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+  <script>
+    
+    //collapse menu
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
+
+    // script.js
+const slides = document.querySelector('.slides');
+let index = 0;
+setInterval(() => {
+  index = (index + 1) % 10; // Cycle through 5 images
+  slides.style.transform = `translateX(${-index * 100}%)`;
+}, 4000); // Change image every 4 seconds
+  </script>
+</body>
+</html>
